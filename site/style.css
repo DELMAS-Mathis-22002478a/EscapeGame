@@ -1,0 +1,70 @@
+*{
+    transition: 1s;
+}
+
+.wrapper{
+    position: relative;
+    top: 40vh;
+  }
+  #button{
+    border: 5px solid #FFAB33;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: auto;
+    background: #FF5733;
+    animation: flash 1.5s linear infinite
+  }
+  
+  #button:hover{
+    background: #DFF30B;
+  }
+  
+  #message{
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+  }
+  
+  .hide{
+    visibility: hidden;
+    
+  }
+  
+  .reveal{
+    visibility: visible;
+  
+  }
+
+  .back{
+    visibility: visible;
+    background-color: black;
+    
+  }
+
+  .imreveal{
+    visibility: visible;
+    animation: ;
+    
+  }
+
+  @keyframes flash
+   {
+    0%{
+       color:#484848;
+    }
+    90%{
+        color:#484848;
+        box-shadow: none;
+    }
+
+    100%{
+        visibility: hidden;
+        box-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    }
+  }
+
+  
