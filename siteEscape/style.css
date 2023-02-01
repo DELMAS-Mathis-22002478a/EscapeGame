@@ -1,0 +1,87 @@
+*{
+    transition: 1s;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+
+  img{
+    width: 100px;
+  }
+
+  #button{
+    filter: drop-shadow(0 10mm 20mm rgb(255, 248, 149));
+    text-align: center;
+    width: 10vw;
+           
+           
+}
+#button2{
+  position: absolute;
+  text-align: center;
+  width: 10vw;
+         
+         
+}
+  
+  #button:hover{
+    cursor: pointer ;
+  }
+  
+  #message{
+    position: absolute;
+  }
+  
+  .hide{
+    visibility: hidden;
+  }
+  
+
+
+  .back{
+    visibility: visible;
+    background-color: #1a1a1a;
+    filter: drop-shadow(0 10mm 20mm rgb(91, 54, 255));
+    
+  }
+
+  .reveal{
+    visibility: visible;
+    
+    
+  }
+
+  .replace{
+    visibility: hidden;
+  }
+/*
+  @keyframes flash
+   {
+    0%{
+       color:#484848;
+    }
+    90%{
+        color:#484848;
+        box-shadow: none;
+    }
+
+    100%{
+        visibility: hidden;
+        box-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    }
+  }
+  
+  .test{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+*/
