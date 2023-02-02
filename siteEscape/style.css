@@ -1,5 +1,5 @@
 *{
-    transition: 1s;
+    
 }
 body{
   margin: 0;
@@ -22,6 +22,8 @@ body{
     filter: drop-shadow(0 10mm 20mm rgb(255, 248, 149));
     text-align: center;
     width: 10vw;
+    transition: 1s;
+    
            
            
 }
@@ -37,12 +39,10 @@ body{
     cursor: pointer ;
   }
   
-  #message{
-    position: absolute;
-  }
-  
+ 
   .hide{
     visibility: hidden;
+    transition: 1s;
   }
   
 
@@ -51,37 +51,33 @@ body{
     visibility: visible;
     background-color: #1a1a1a;
     filter: drop-shadow(0 10mm 20mm rgb(91, 54, 255));
-    
+    transition: 1s;
   }
 
   .reveal{
     visibility: visible;
+    transition: 1s;
     
-    
   }
 
-  .replace{
-    visibility: hidden;
-  }
-/*
-  @keyframes flash
-   {
-    0%{
-       color:#484848;
-    }
-    90%{
-        color:#484848;
-        box-shadow: none;
-    }
-
-    100%{
-        visibility: hidden;
-        box-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
-    }
-  }
-  
-  .test{
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  #welcome{
+    margin-top: 15vh;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 1s;
   }
 
-*/
+  .welcomeback{
+    opacity: 40%;
+    transition: 1s;
+  }
+  #welcomehide{
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #9054a8;
+    opacity: 70%;
+    transition: 1s;
+  }
