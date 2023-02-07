@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJET</title>
     <script src="jvstyle.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Karla:wght@200;300&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -17,17 +23,27 @@
     </div>
     <p></p>
     <p id="welcome">BIENVENUE !</p>
-    <p id="welcomemessage">voici la page d'accueil, trouver les premiers indices pour commencer à JOUER</p>
-    <p id="welcomehide" class="hide">OU PAS !</p>
+    <p id="welcomemessage">voici la page d'accueil, trouver le premier indices pour commencer à JOUER</p>
+    <p id="welcomehide" class="hide">SI VOUS Y ARRIVEZ !</p>
     <div class="wrapper">
         <div id="wrapperPlay" class="hide">
         <p id="playButton">JOUER !</p>
         </div>
     </div>
+    
+    <button id="myBtn" class="hide" >i</button>
+
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>?????????????????????</p>
+    </div>
+    </div>
+   
 
     
-    <input type="search" id="searchBar" class="hide" value="" onchange="jouer()">
-   
+    <input type="search" id="searchBar" class="hide" value="" onchange="jouer()" autocomplete="off">
+
     
 
       
