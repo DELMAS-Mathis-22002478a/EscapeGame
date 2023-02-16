@@ -1,6 +1,10 @@
 *{
     
 }
+:root{
+  --back-color : rgb(4, 129, 21);
+  --second-color : rgb(91, 54, 255);
+}
 
 body{
   margin: 0;
@@ -26,11 +30,11 @@ body{
     font-size: 2em;
     font-family: 'Creepster', cursive;
     transition: 1s;
-    background-color:  #9054a8;
-    border-color: #6e2b89;
+    background-color:  var(--back-color);
+    border-color: var(--back-color);
     width: 200px;
     border-radius: 100px;
-    filter: drop-shadow(0 0mm 20mm rgb(91, 54, 255));
+    filter: drop-shadow(0 0mm 20mm var(--back-color));
     
     
   }
@@ -75,7 +79,7 @@ body{
 
 
   .back{
-    filter: drop-shadow(0 10mm 20mm rgb(91, 54, 255));
+    filter: drop-shadow(0 10mm 20mm var(--back-color));
     transition: 1s;
   }
 
@@ -113,10 +117,10 @@ body{
     font-size: 3em;
     font-family: 'Creepster', cursive;
     text-align: center;
-    color: #9054a8;
+    color: var(--back-color);
     opacity: 90%;
     text-shadow:
-    0 0 50px rgb(168, 91, 240);
+    0 0 50px var(--back-color);
     
   }
 
@@ -126,7 +130,7 @@ body{
     right: 4vw;
     top:3vh;
     width: 5vw;
-    color: #9054a8;
+    color: var(--back-color);
   }
 
   #searchBar{
@@ -148,9 +152,10 @@ body{
     background-color: rgba(0,0,0,0.4);
   }
   
+  
   .modal-content {
     background-color: #fefefe;
-    margin: auto;
+    margin: auto; 
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -164,6 +169,13 @@ body{
     font-size: 28px;
     font-weight: bold;
   }
+  .close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
   
   .close:hover,
   .close:focus {
@@ -174,12 +186,15 @@ body{
 
   #myBtn{
     color: #ffffff;
-    background-color:#9054a8;
+    background-color:var(--back-color);
     position: absolute;
     top: 3vh;
     left: 3vw;
     border-radius: 10px;
-    filter: drop-shadow(0 0mm 20mm rgb(91, 54, 255));
+    filter: drop-shadow(0 0mm 20mm var(--back-color));
     
   }
+
+  
+  
   

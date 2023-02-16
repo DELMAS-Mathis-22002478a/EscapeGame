@@ -29,10 +29,13 @@ function change(){
   let displayImage = document.getElementById('im');
   if(displayImage.src.match('ampoule.png')){
     displayImage.src='ampouleV.png';
-  } else{
+    
+  } 
+  else{
     displayImage.src='ampoule.png';
+    
   }
-  
+ 
 }
 
 function jouer(){
@@ -40,10 +43,13 @@ function jouer(){
   if(a === "jouer" || a === "JOUER"){
     play.classList.toggle('reveal');
   }
+  if(a === "indice" || a === "INDICE"){
+    modal2.style.display = "block";
+  }
 }
 play.addEventListener('click', ()=>{
  
-  window.open('./niveau1.html')
+  window.open('./pres.html')
  
   
 })
@@ -51,9 +57,11 @@ play.addEventListener('click', ()=>{
 // Référence au bouton et à la fenêtre modale
 var btn = document.getElementById("myBtn");
 var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
 
 // Référence à la croix de fermeture
 var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
 
 // Afficher la fenêtre modale lorsque le bouton est cliqué
 btn.onclick = function() {
@@ -64,10 +72,19 @@ btn.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
 }
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
 
 // Fermer la fenêtre modale lorsque l'utilisateur clique en dehors de la fenêtre
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
 }
+
+
+

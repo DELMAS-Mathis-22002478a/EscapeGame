@@ -1,0 +1,35 @@
+:root{
+    --back-color : rgb(4, 129, 21);
+    --second-color : rgb(91, 54, 255);
+  }
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  input[type="text"] {
+    width: 100px;
+    height: 30px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 100px;
+    height: 30px;
+    background-color: var(--back-color);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #message {
+    margin-top: 20px;
+    font-size: 18px;
+  }

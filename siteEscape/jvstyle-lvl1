@@ -1,0 +1,47 @@
+const codeInput = document.getElementById("codeInput");
+const submitBtn = document.getElementById("submitBtn");
+const message = document.getElementById("message");
+
+const correctCode = "1234";
+
+submitBtn.addEventListener("click", function() {
+  if (codeInput.value === correctCode) {
+    message.innerHTML = "Code correct";
+    message.style.color = "green";
+  } else {
+    message.innerHTML = "Code incorrect";
+    message.style.color = "red";
+  }
+});
+
+// Référence au bouton et à la fenêtre modale
+var btn = document.getElementById("myBtn");
+var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
+
+// Référence à la croix de fermeture
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+
+// Afficher la fenêtre modale lorsque le bouton est cliqué
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Fermer la fenêtre modale lorsque la croix est cliquée
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+// Fermer la fenêtre modale lorsque l'utilisateur clique en dehors de la fenêtre
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
